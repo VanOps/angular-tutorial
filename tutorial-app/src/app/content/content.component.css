@@ -1,0 +1,30 @@
+#sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  #sidebar .nav-link {
+    color: #333;
+  }
+  
+  #sidebar .nav-link:hover {
+    color: #007bff;
+  }
+  
+  main {
+    margin-left: 250px; /* Adjust this value based on the width of your sidebar */
+  }
+  
+  .list-group-numbered .list-group-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-group-numbered .list-group-item span {
+    font-weight: bold;
+    margin-right: 10px;
+  }

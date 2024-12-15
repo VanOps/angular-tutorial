@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
+  title = 'Tutorial rapido Angular';
   content: any = {
     "Seccion1": {
       "title": "Introducción",
@@ -39,11 +40,18 @@ export class ContentComponent {
       ]
     },
     "Seccion4": {
-      "title": "Creacion del proyecto",
-      "content": "This is the starting steps content"
+      "title": "Creacion de este proyecto",
+      "content": [
+        "Este proyecto fue creado utilizando Angular CLI. Para crear este proyecto, se ejecutaron los siguientes comandos:",
+        "`ng new tutorial-app` para crear un nuevo proyecto Angular.",
+        "`ng generate component head` para generar un componente llamado HeadComponent.",
+        "`ng generate component content` para generar un componente llamado ContentComponent.",
+        "Estos comandos generaron la estructura inicial del proyecto y los componentes necesarios para mostrar el contenido de la aplicación. Luego, se modificaron los archivos HTML y CSS de los componentes para personalizar el diseño y el estilo de la aplicación.",
+        "Finalmente, se agregó el contenido de la aplicación en el archivo content.component.ts y se utilizó la directiva *ngFor en el archivo content.component.html para mostrar dinámicamente el contenido de cada sección."
+      ]
     },
     "Seccion5": {
-      "title": "Despedida",
+      "title": "Descripcion del código este proyecto",
       "content": "This is the about content"
     }
   };

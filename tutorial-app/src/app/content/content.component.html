@@ -1,13 +1,37 @@
-<div *ngFor="let key of contentKeys()">
-    <h2>{{ content[key].title }}</h2>
-    <div *ngIf="isArray(content[key].content); else singleContent">
-      <ol>
-        <li *ngFor="let item of content[key].content">
-          <p>{{ item }}</p>
-        </li>
-      </ol>
+<div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item" *ngFor="let key of contentKeys()">
+              <a class="nav-link" href="#{{ key }}">{{ content[key].title }}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- Main content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <h1 class="text-center mt-4">{{ title }}</h1>
+        <div *ngFor="let key of contentKeys()" id="{{ key }}" class="card mb-3">
+          <div class="card-header">
+            <h2 class="card-title">{{ content[key].title }}</h2>
+          </div>
+          <div class="card-body">
+            <div *ngIf="isArray(content[key].content); else singleContent">
+              <ol class="list-group">
+                <li class="list-group-item d-flex align-items-start" *ngFor="let item of content[key].content; let i = index">
+                  <span class="me-2">{{ i + 1 }}.</span>
+                  <p class="mb-0">{{ item }}</p>
+                </li>
+              </ol>
+            </div>
+            <ng-template #singleContent>
+              <p>{{ content[key].content }}</p>
+            </ng-template>
+          </div>
+        </div>
+      </main>
     </div>
-    <ng-template #singleContent>
-      <p>{{ content[key].content }}</p>
-    </ng-template>
   </div>
