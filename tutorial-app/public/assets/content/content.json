@@ -1,0 +1,18 @@
+{
+    "Seccion1": {
+        "title": "Introduction",
+        "content": "This is the introduction content"
+    },
+    "Seccion2": {
+        "title": "Ideas",
+        "content": "This is the ideas content"
+    },
+    "Seccion3": {
+        "title": "Starting Steps",
+        "content": "This is the starting steps content"
+    },
+    "Seccion4": {
+        "title": "About",
+        "content": "This is the about content"
+    }
+}
