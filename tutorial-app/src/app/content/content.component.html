@@ -1,5 +1,13 @@
-<!-- filepath: /home/epicuro/Desktop/IngenieríaInformatica/curso2/cuatrimestre1/MI-DesarrolloAplicacionRed/code/angular-tutorial/tutorial-app/src/app/content/content.component.html -->
 <div *ngFor="let key of contentKeys()">
-    <p>{{ key }}</p>
-    <p>{{ content[key] }}</p>
+    <h2>{{ content[key].title }}</h2>
+    <div *ngIf="isArray(content[key].content); else singleContent">
+      <ol>
+        <li *ngFor="let item of content[key].content">
+          <p>{{ item }}</p>
+        </li>
+      </ol>
+    </div>
+    <ng-template #singleContent>
+      <p>{{ content[key].content }}</p>
+    </ng-template>
   </div>
