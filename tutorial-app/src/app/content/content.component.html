@@ -13,7 +13,6 @@
 
     <!-- Contenido principal -->
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <h1 class="text-center mt-4">{{ title }}</h1>
       <!-- Bucle para recorrer las claves del objeto content -->
       <div *ngFor="let key of contentKeys()" id="{{ key }}" class="card mb-3">
         <div class="card-header">
@@ -48,3 +47,5 @@
     </main>
   </div>
 </div>
+
+<app-welcome-message></app-welcome-message>

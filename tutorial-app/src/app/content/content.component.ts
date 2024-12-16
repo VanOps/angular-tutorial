@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WelcomeMessageComponent } from '../welcome-message/welcome-message.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WelcomeMessageComponent],
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
-  title = 'Tutorial rapido Angular';
   content: any = {
     "Seccion1": {
       "title": "Introducción",
@@ -43,9 +43,9 @@ export class ContentComponent {
       "title": "Creacion de este proyecto",
       "content": [
         "Este proyecto fue creado utilizando Angular CLI. Para crear este proyecto, se ejecutaron los siguientes comandos:",
-        "<code>ng new tutorial-app</code>` para crear un nuevo proyecto Angular.",
-        "<code>ng generate component head</code>` para generar un componente llamado HeadComponent.",
-        "<code>ng generate component content</code>` para generar un componente llamado ContentComponent.",
+        "<code>ng new tutorial-app</code> para crear un nuevo proyecto Angular.",
+        "<code>ng generate component head</code> para generar un componente llamado HeadComponent.",
+        "<code>ng generate component content</code> para generar un componente llamado ContentComponent.",
         "Estos comandos generaron la estructura inicial del proyecto y los componentes necesarios para mostrar el contenido de la aplicación. Luego, se modificaron los archivos HTML y CSS de los componentes para personalizar el diseño y el estilo de la aplicación.",
         "Finalmente, se agregó el contenido de la aplicación en el archivo content.component.ts y se utilizó la directiva *ngFor en el archivo content.component.html para mostrar dinámicamente el contenido de cada sección."
       ]
@@ -66,7 +66,7 @@ export class ContentComponent {
         "En resumen, este proyecto utiliza componentes, directivas y módulos de Angular para crear una aplicación web dinámica y de una sola página. Los componentes se utilizan para organizar la interfaz de usuario y mostrar el contenido de la aplicación, mientras que las directivas se utilizan para manipular el DOM y aplicar lógica condicional."
       ]
     }
-  };
+  };    
 
   contentKeys(): string[] {
     return Object.keys(this.content);
