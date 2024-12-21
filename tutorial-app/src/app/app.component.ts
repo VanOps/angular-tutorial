@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// Aquí importo el componente HeadComponent
 import { HeadComponent } from './head/head.component';
+import { ContentComponent } from './content/content.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeadComponent],
+  imports: [RouterOutlet, HeadComponent, ContentComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

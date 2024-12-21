@@ -1,0 +1,8 @@
+/* filepath: /home/epicuro/Desktop/IngenieríaInformatica/curso2/cuatrimestre1/MI-DesarrolloAplicacionRed/code/angular-tutorial/tutorial-app/src/app/head/head.component.css */
+.text-magenta {
+    color: magenta;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
