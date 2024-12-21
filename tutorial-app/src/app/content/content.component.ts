@@ -65,6 +65,18 @@ export class ContentComponent {
         "Este proyecto también utiliza el módulo CommonModule de Angular para importar las directivas y pipes comunes utilizados en la aplicación. El módulo CommonModule proporciona funcionalidades básicas como ngIf y ngFor que son necesarias para la aplicación.",
         "En resumen, este proyecto utiliza componentes, directivas y módulos de Angular para crear una aplicación web dinámica y de una sola página. Los componentes se utilizan para organizar la interfaz de usuario y mostrar el contenido de la aplicación, mientras que las directivas se utilizan para manipular el DOM y aplicar lógica condicional."
       ]
+    },
+    "Seccion6": {
+      "title": "Despliegue del proyecto",
+      "paragraph": [
+        "Para desplegar el proyecto se ha decidido usar gh-pages, una herramienta que permite desplegar proyectos de GitHub en GitHub Pages de forma sencilla.",
+        "Para desplegar el proyecto en GitHub Pages, se han seguido los siguientes pasos:",
+        "1. He creado una rama gh-pages en el repositorio de GitHub utilizando el comando <code>git checkout -b gh-pages</code>.",
+        "2. He configurado en el repositorio para que la rama gh-pages sea la rama predeterminada en la configuración de GitHub Pages.",
+        "2. Ejecuto el comando <code>ng add angular-cli-ghpages</code> para instalar la herramienta angular-cli-ghpages que facilita el despliegue de proyectos Angular en GitHub Pages.",
+        "3. Ejecuto el comando <code>ng deploy --base-href=https://vanops.github.io/angular-tutorial/tutorial-app/</code> para desplegar el proyecto en la rama gh-pages del repositorio de GitHub.",
+        "4. Una vez desplegado, puedo acceder a la aplicación en la URL https://vanops.github.io/angular-tutorial/tutorial-app/ y compartir el enlace con otros usuarios."
+      ]
     }
   };    
 
