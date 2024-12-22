@@ -14,7 +14,12 @@ export class ContentComponent {
     "Seccion1": {
       "title": "Introducción",
       "paragraph": [
-        "Angular es un framework de desarrollo de aplicaciones web de código abierto mantenido por Google. Está diseñado para facilitar la creación de aplicaciones web dinámicas y de una sola página (SPA, por sus siglas en inglés). Aquí encontrarás una breve introducción a sus características y componentes clave."
+        "Angular es un framework de desarrollo de aplicaciones web de código abierto mantenido por Google. Está diseñado para facilitar la creación de aplicaciones web dinámicas y de una sola página (SPA, por sus siglas en inglés). Aquí encontrarás una breve introducción a sus características y componentes clave.",
+        "</br>Ejemplos reales incluyen:",
+        "• Gmail: El popular servicio de correo electrónico de Google utiliza Angular para su interfaz de usuario.",
+        "• Forbes: El sitio web de noticias y negocios utiliza Angular para ofrecer una experiencia de usuario dinámica y rápida.",
+        "• Upwork: La plataforma de freelancing utiliza Angular para su interfaz de usuario, permitiendo a los usuarios buscar y gestionar trabajos.",
+        "</br>Angular se apoya principalmente en TypeScript, un superconjunto de JavaScript. También utiliza HTML y CSS para la estructura y el estilo de las aplicaciones. Angular proporciona una amplia gama de características y herramientas para desarrollar aplicaciones web complejas y escalables."
       ]
     },
     "Seccion2": {
@@ -53,31 +58,46 @@ export class ContentComponent {
       ]
     },
     "Seccion5": {
-      "title": "Descripcion del código este proyecto",
-      "paragraph": [
-        "Este proyecto utiliza componentes para organizar la interfaz de usuario y mostrar el contenido de la aplicación. Cada componente tiene su propio archivo HTML, CSS y TypeScript para definir la estructura, el estilo y la lógica del componente.",
-        "El componente content.component define la clase ContentComponent que contiene el contenido de la aplicación en forma de objetos JSON. Cada objeto JSON representa una sección de la aplicación con un título y un contenido asociado.",
-        "El archivo content.component.html utiliza la directiva *ngFor para iterar sobre los objetos JSON y mostrar dinámicamente el contenido de cada sección en la página.",
-        "El componente head.component define la clase HeadComponent que muestra el encabezado de la aplicación con el título principal. El título se muestra utilizando la interpolación de datos en el archivo head.component.html.",
-        "El componente wellcome-message.component define la clase WellcomeMessageComponent que muestra un mensaje de bienvenida en la página de inicio de la aplicación. El mensaje se muestra utilizando la interpolación de datos en el archivo wellcome-message.component.html.",
-        "El archivo app.component.html utiliza los componentes HeadComponent y ContentComponent para mostrar el encabezado y el contenido de la aplicación en la página principal.",
-        "El archivo app.component.css contiene los estilos CSS para personalizar el diseño de la aplicación, incluyendo el color de fondo, el tamaño de fuente y el espaciado de los elementos.",
-        "El archivo app.module.ts define el módulo raíz de la aplicación que importa los componentes y módulos necesarios para ejecutar la aplicación. El módulo raíz también define el componente principal de la aplicación y lo declara en la lista de bootstrapComponents.",
-        "El archivo main.ts inicia la aplicación Angular llamando a la función platformBrowserDynamic().bootstrapModule(AppModule) para cargar el módulo raíz de la aplicación en el navegador.",
-        "Este proyecto también utiliza el módulo CommonModule de Angular para importar las directivas y pipes comunes utilizados en la aplicación. El módulo CommonModule proporciona funcionalidades básicas como ngIf y ngFor que son necesarias para la aplicación.",
-        "En resumen, este proyecto utiliza componentes, directivas y módulos de Angular para crear una aplicación web dinámica y de una sola página. Los componentes se utilizan para organizar la interfaz de usuario y mostrar el contenido de la aplicación, mientras que las directivas se utilizan para manipular el DOM y aplicar lógica condicional."
+      "title": "Rutas a los archivos más importantes",
+      "listItems": [
+        "<code>src/app/app.module.ts</code>: Archivo principal del módulo de la aplicación donde se declaran y se importan otros módulos y componentes.",
+        "<code>src/app/app.component.ts</code>: Componente raíz de la aplicación. Contiene la lógica principal del componente.",
+        "<code>src/app/app.component.html</code>: Plantilla HTML del componente raíz.",
+        "<code>src/app/app.component.css</code>: Estilos CSS del componente raíz.",
+        "<code>src/main.ts</code>: Punto de entrada principal de la aplicación. Aquí se inicia la aplicación Angular.",
+        "<code>src/index.html</code>: Archivo HTML principal que se sirve al cargar la aplicación. Contiene el contenedor `<app-root>` donde se renderiza la aplicación Angular.",
+        "<code>src/styles.css</code>: Archivo de estilos globales para la aplicación.",
+        "<code>angular.json</code>: Archivo de configuración principal de Angular CLI. Define la configuración del proyecto y las opciones de compilación.",
+        "<code>tsconfig.json</code>: Archivo de configuración de TypeScript. Define las opciones de compilación de TypeScript.",
+        "<code>package.json</code>: Archivo de configuración de npm. Lista las dependencias del proyecto y los scripts de npm."
       ]
     },
     "Seccion6": {
+      "title": "Descripcion del código del proyecto",
+      "paragraph": [
+        "Este proyecto utiliza componentes para organizar la interfaz de usuario y mostrar el contenido de la aplicación. Cada componente tiene su propio archivo HTML, CSS y TypeScript para definir la estructura, el estilo y la lógica del componente.",
+        "</br>El componente content.component define la clase ContentComponent que contiene el contenido de la aplicación en forma de objetos JSON. Cada objeto JSON representa una sección de la aplicación con un título y un contenido asociado.",
+        "</br>El archivo content.component.html utiliza la directiva *ngFor para iterar sobre los objetos JSON y mostrar dinámicamente el contenido de cada sección en la página.",
+        "</br>El componente head.component define la clase HeadComponent que muestra el encabezado de la aplicación con el título principal. El título se muestra utilizando la interpolación de datos en el archivo head.component.html.",
+        "</br>El componente wellcome-message.component define la clase WellcomeMessageComponent que muestra un mensaje de bienvenida en la página de inicio de la aplicación. El mensaje se muestra utilizando la interpolación de datos en el archivo wellcome-message.component.html.",
+        "</br>El archivo app.component.html utiliza los componentes HeadComponent y ContentComponent para mostrar el encabezado y el contenido de la aplicación en la página principal.",
+        "</br>El archivo app.component.css contiene los estilos CSS para personalizar el diseño de la aplicación, incluyendo el color de fondo, el tamaño de fuente y el espaciado de los elementos.",
+        "</br>El archivo app.module.ts define el módulo raíz de la aplicación que importa los componentes y módulos necesarios para ejecutar la aplicación. El módulo raíz también define el componente principal de la aplicación y lo declara en la lista de bootstrapComponents.",
+        "</br>El archivo main.ts inicia la aplicación Angular llamando a la función platformBrowserDynamic().bootstrapModule(AppModule) para cargar el módulo raíz de la aplicación en el navegador.",
+        "</br>Este proyecto también utiliza el módulo CommonModule de Angular para importar las directivas y pipes comunes utilizados en la aplicación. El módulo CommonModule proporciona funcionalidades básicas como ngIf y ngFor que son necesarias para la aplicación.",
+        "</br>En resumen, este proyecto utiliza componentes, directivas y módulos de Angular para crear una aplicación web dinámica y de una sola página. Los componentes se utilizan para organizar la interfaz de usuario y mostrar el contenido de la aplicación, mientras que las directivas se utilizan para manipular el DOM y aplicar lógica condicional."
+      ]
+    },
+    "Seccion7": {
       "title": "Despliegue del proyecto",
       "paragraph": [
         "Para desplegar el proyecto se ha decidido usar gh-pages, una herramienta que permite desplegar proyectos de GitHub en GitHub Pages de forma sencilla.",
-        "Para desplegar el proyecto en GitHub Pages, se han seguido los siguientes pasos:",
-        "He creado una rama gh-pages en el repositorio de GitHub utilizando el comando <code>git checkout -b gh-pages</code>.",
-        "He configurado en el repositorio para que la rama gh-pages sea la rama predeterminada en la configuración de GitHub Pages.",
-        "Ejecuto el comando <code>ng add angular-cli-ghpages</code> para instalar la herramienta angular-cli-ghpages que facilita el despliegue de proyectos Angular en GitHub Pages.",
-        "Ejecuto el comando <code>ng deploy --base-href=https://vanops.github.io/angular-tutorial/tutorial-app/</code> para desplegar el proyecto en la rama gh-pages del repositorio de GitHub.",
-        "Una vez desplegado, puedo acceder a la aplicación en la URL https://vanops.github.io/angular-tutorial/tutorial-app/ y compartir el enlace con otros usuarios."
+        "</br>Para desplegar el proyecto en GitHub Pages, se han seguido los siguientes pasos:",
+        "</br>He creado una rama gh-pages en el repositorio de GitHub utilizando el comando <code>git checkout -b gh-pages</code>.",
+        "</br>He configurado en el repositorio para que la rama gh-pages sea la rama predeterminada en la configuración de GitHub Pages.",
+        "</br>Ejecuto el comando <code>ng add angular-cli-ghpages</code> para instalar la herramienta angular-cli-ghpages que facilita el despliegue de proyectos Angular en GitHub Pages.",
+        "</br>Ejecuto el comando <code>ng deploy --base-href=https://vanops.github.io/angular-tutorial/tutorial-app/</code> para desplegar el proyecto en la rama gh-pages del repositorio de GitHub.",
+        "</br>Una vez desplegado, puedo acceder a la aplicación en la URL https://vanops.github.io/angular-tutorial/tutorial-app/ y compartir el enlace con otros usuarios."
       ]
     }
   };    
