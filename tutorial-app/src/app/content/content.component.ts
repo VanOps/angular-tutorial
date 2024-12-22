@@ -47,7 +47,7 @@ export class ContentComponent {
       ]
     },
     "Seccion4": {
-      "title": "Creacion de este proyecto",
+      "title": "Creación de este proyecto",
       "listItems": [
         "Este proyecto fue creado utilizando Angular CLI. Para crear este proyecto, se ejecutaron los siguientes comandos:",
         "<code>ng new tutorial-app</code> para crear un nuevo proyecto Angular.",
@@ -73,7 +73,7 @@ export class ContentComponent {
       ]
     },
     "Seccion6": {
-      "title": "Descripcion del código del proyecto",
+      "title": "Descripción del código del proyecto",
       "paragraph": [
         "Este proyecto utiliza componentes para organizar la interfaz de usuario y mostrar el contenido de la aplicación. Cada componente tiene su propio archivo HTML, CSS y TypeScript para definir la estructura, el estilo y la lógica del componente.",
         "</br>El componente content.component define la clase ContentComponent que contiene el contenido de la aplicación en forma de objetos JSON. Cada objeto JSON representa una sección de la aplicación con un título y un contenido asociado.",
