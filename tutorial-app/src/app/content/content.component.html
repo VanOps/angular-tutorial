@@ -23,24 +23,22 @@
           <!-- Si content[key].paragraph existe, muestro un párrafo -->
           <ng-container *ngIf="content[key].paragraph; else contentList">
             <div *ngFor="let para of content[key].paragraph">
+              <!-- Uso innerHTML para renderizar el contenido HTML y poder mostrar comandos -->
+              <p class="mb-0" [innerHTML]="para"></p>
               <p>{{ para }}</p>
             </div>
           </ng-container>
           <ng-template #contentList>
-            <!-- Si content[key].content es un array, muestro una lista -->
-            <ng-container *ngIf="isArray(content[key].content); else singleContent">
+            <!-- Si content[key].listItems es un array, muestro una lista -->
+            <ng-container *ngIf="isArray(content[key].listItems);">
               <ol class="list-group">
-                <li class="list-group-item d-flex align-items-start" *ngFor="let item of content[key].content; let i = index">
+                <li class="list-group-item d-flex align-items-start" *ngFor="let item of content[key].listItems; let i = index">
                   <span class="me-2">{{ i + 1 }}.</span>
                   <!-- Uso innerHTML para renderizar el contenido HTML y poder mostrar comandos -->
                   <p class="mb-0" [innerHTML]="item"></p>
                 </li>
               </ol>
             </ng-container>
-            <!-- Si content[key].content no es un array, muestro un párrafo -->
-            <ng-template #singleContent>
-              <p>{{ content[key].content }}</p>
-            </ng-template>
           </ng-template>
         </div>
       </div>

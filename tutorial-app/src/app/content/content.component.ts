@@ -13,11 +13,13 @@ export class ContentComponent {
   content: any = {
     "Seccion1": {
       "title": "Introducción",
-      "content": "Angular es un framework de desarrollo de aplicaciones web de código abierto mantenido por Google. Está diseñado para facilitar la creación de aplicaciones web dinámicas y de una sola página (SPA, por sus siglas en inglés). Aquí encontrarás una breve introducción a sus características y componentes clave."
+      "paragraph": [
+        "Angular es un framework de desarrollo de aplicaciones web de código abierto mantenido por Google. Está diseñado para facilitar la creación de aplicaciones web dinámicas y de una sola página (SPA, por sus siglas en inglés). Aquí encontrarás una breve introducción a sus características y componentes clave."
+      ]
     },
     "Seccion2": {
       "title": "Características Principales de Angular",
-      "content": [
+      "listItems": [
         "Componentes: Angular utiliza una arquitectura basada en componentes. Cada componente encapsula una parte de la interfaz de usuario y su lógica asociada. Los componentes se pueden reutilizar y componer para construir aplicaciones complejas.",
         "Templates: Los componentes en Angular utilizan plantillas HTML para definir la estructura de la interfaz de usuario. Las plantillas pueden incluir directivas y enlaces de datos para interactuar con el modelo de datos del componente.",
         "Data Binding: Angular proporciona varias formas de enlazar datos entre el modelo y la vista, incluyendo el enlace de datos unidireccional y bidireccional. Esto facilita la sincronización de datos entre la interfaz de usuario y la lógica de la aplicación.",
@@ -30,7 +32,7 @@ export class ContentComponent {
     },
     "Seccion3": {
       "title": "Instalación",
-      "content": [
+      "listItems": [
         "Para empezar a trabajar con Angular, necesitas tener Node.js y npm instalados en tu sistema. Puedes descargar e instalar Node.js desde su sitio web oficial.",
         "Una vez que tengas Node.js instalado, puedes instalar Angular CLI (Command Line Interface) utilizando npm. Angular CLI es una herramienta de línea de comandos que facilita la creación, el desarrollo y la implementación de aplicaciones Angular.",
         "Para instalar Angular CLI, abre una terminal y ejecuta el siguiente comando: <code>npm install -g @angular/cli</code>",
@@ -41,7 +43,7 @@ export class ContentComponent {
     },
     "Seccion4": {
       "title": "Creacion de este proyecto",
-      "content": [
+      "listItems": [
         "Este proyecto fue creado utilizando Angular CLI. Para crear este proyecto, se ejecutaron los siguientes comandos:",
         "<code>ng new tutorial-app</code> para crear un nuevo proyecto Angular.",
         "<code>ng generate component head</code> para generar un componente llamado HeadComponent.",
@@ -71,11 +73,11 @@ export class ContentComponent {
       "paragraph": [
         "Para desplegar el proyecto se ha decidido usar gh-pages, una herramienta que permite desplegar proyectos de GitHub en GitHub Pages de forma sencilla.",
         "Para desplegar el proyecto en GitHub Pages, se han seguido los siguientes pasos:",
-        "1. He creado una rama gh-pages en el repositorio de GitHub utilizando el comando <code>git checkout -b gh-pages</code>.",
-        "2. He configurado en el repositorio para que la rama gh-pages sea la rama predeterminada en la configuración de GitHub Pages.",
-        "2. Ejecuto el comando <code>ng add angular-cli-ghpages</code> para instalar la herramienta angular-cli-ghpages que facilita el despliegue de proyectos Angular en GitHub Pages.",
-        "3. Ejecuto el comando <code>ng deploy --base-href=https://vanops.github.io/angular-tutorial/tutorial-app/</code> para desplegar el proyecto en la rama gh-pages del repositorio de GitHub.",
-        "4. Una vez desplegado, puedo acceder a la aplicación en la URL https://vanops.github.io/angular-tutorial/tutorial-app/ y compartir el enlace con otros usuarios."
+        "He creado una rama gh-pages en el repositorio de GitHub utilizando el comando <code>git checkout -b gh-pages</code>.",
+        "He configurado en el repositorio para que la rama gh-pages sea la rama predeterminada en la configuración de GitHub Pages.",
+        "Ejecuto el comando <code>ng add angular-cli-ghpages</code> para instalar la herramienta angular-cli-ghpages que facilita el despliegue de proyectos Angular en GitHub Pages.",
+        "Ejecuto el comando <code>ng deploy --base-href=https://vanops.github.io/angular-tutorial/tutorial-app/</code> para desplegar el proyecto en la rama gh-pages del repositorio de GitHub.",
+        "Una vez desplegado, puedo acceder a la aplicación en la URL https://vanops.github.io/angular-tutorial/tutorial-app/ y compartir el enlace con otros usuarios."
       ]
     }
   };    
